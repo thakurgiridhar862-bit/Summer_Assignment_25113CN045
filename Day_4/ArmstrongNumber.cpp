@@ -11,7 +11,6 @@ int main()
     int count = 0;
     while (x > 0)
     {
-        int ld = x % 10;
         count++;
         x = x / 10;
     }
