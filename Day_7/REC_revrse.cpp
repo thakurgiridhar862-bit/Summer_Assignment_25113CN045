@@ -15,6 +15,7 @@ void reverseNum(int n)
 int main()
 {
     int n;
+    cout<<"Enter a number : ";
     cin >> n;
 
     reverseNum(n);
