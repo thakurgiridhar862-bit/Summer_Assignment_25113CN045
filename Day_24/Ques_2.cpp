@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string s;
+    cout << "Enter string: ";
+    getline(cin, s);
+
+    string result = "";
+
+    for (int i = 0; i < s.length(); i++)
+    {
+        int count = 1;
+
+        while (i < s.length() - 1 && s[i] == s[i + 1])
+        {
+            count++;
+            i++;
+        }
+
+        result += s[i];
+        result += to_string(count);
+    }
+
+    cout << "Compressed String: " << result;
+
+    return 0;
+}
